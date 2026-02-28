@@ -1,0 +1,108 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="customersreport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="870deb53-7c1c-48a4-8903-beb6bb6f6b5f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="478"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="522"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+	<query language="SQL"><![CDATA[SELECT  *  From customer]]></query>
+	<field name="id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="tp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tp"/>
+		<property name="com.jaspersoft.studio.field.label" value="tp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<group name="id">
+		<expression><![CDATA[$F{id}]]></expression>
+	</group>
+	<group name="name">
+		<expression><![CDATA[$F{name}]]></expression>
+	</group>
+	<group name="address">
+		<expression><![CDATA[$F{address}]]></expression>
+	</group>
+	<group name="tp">
+		<expression><![CDATA[$F{tp}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="83" splitType="Stretch">
+		<element kind="staticText" uuid="ccaa6787-12c2-4243-bea1-65c9aeeafa53" x="130" y="20" width="230" height="51" fontSize="28.0">
+			<text><![CDATA[Customer Report]]></text>
+		</element>
+		<element kind="textField" uuid="05d97d1b-ffcb-4969-b648-476fb7f1ab7e" x="420" y="3" width="143" height="30" pattern="MMMMM dd, yyyy">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="textField" uuid="4a99ea34-67fd-4535-a930-83dc1e95867b" x="420" y="33" width="100" height="30" pattern="HH:mm">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</title>
+	<pageHeader height="77" splitType="Stretch">
+		<element kind="staticText" uuid="e70c1c0c-4c03-4140-b3b9-ab5ffc642c8e" x="160" y="-12" width="240" height="27" fontSize="14.0">
+			<text><![CDATA[Shashi Book Shop kurunegala]]></text>
+		</element>
+		<element kind="staticText" uuid="7604165a-f6a5-4692-abbf-2f8a5349991c" x="120" y="15" width="100" height="30">
+			<text><![CDATA[TP 0777777111]]></text>
+		</element>
+		<element kind="staticText" uuid="c17223b5-11ea-4bbb-b608-57bd7e8a6fff" x="260" y="15" width="150" height="21">
+			<text><![CDATA[Email shashibook@gmail.com]]></text>
+		</element>
+	</pageHeader>
+	<columnHeader height="43" splitType="Stretch">
+		<element kind="staticText" uuid="091a000d-8bdf-4f6d-8a00-6dda4ac8f47d" x="0" y="0" width="141" height="30">
+			<text><![CDATA[id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9bfaeca2-25c7-43e2-bc3c-7906607ea68c"/>
+		</element>
+		<element kind="staticText" uuid="c2895fb4-372d-4ab3-b35a-9b1d5e9fe9ba" x="141" y="0" width="138" height="30">
+			<text><![CDATA[name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0addc6c-e22e-4489-84c1-62210e57451a"/>
+		</element>
+		<element kind="staticText" uuid="5717d751-8466-420c-a60d-999153060dec" x="279" y="0" width="138" height="30">
+			<text><![CDATA[address]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec807c34-6b50-4843-8062-0afad72a9d65"/>
+		</element>
+		<element kind="staticText" uuid="fd40ab08-b801-4560-90d8-37d2b206b108" x="417" y="0" width="138" height="30">
+			<text><![CDATA[tp]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a61b9717-d030-4d93-b0a8-26b2d0aec48d"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<element kind="textField" uuid="cd6e25d1-2791-4e8a-9c6e-7fd2f705f8d1" x="0" y="0" width="141" height="30">
+				<expression><![CDATA[$F{id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9bfaeca2-25c7-43e2-bc3c-7906607ea68c"/>
+			</element>
+			<element kind="textField" uuid="91f1d09d-bd66-4235-85c1-77216980d7f8" x="141" y="0" width="138" height="30">
+				<expression><![CDATA[$F{name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0addc6c-e22e-4489-84c1-62210e57451a"/>
+			</element>
+			<element kind="textField" uuid="6687f0f2-ce43-4eb0-add0-321fb0870220" x="279" y="0" width="138" height="30">
+				<expression><![CDATA[$F{address}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec807c34-6b50-4843-8062-0afad72a9d65"/>
+			</element>
+			<element kind="textField" uuid="d27cf15a-1b7c-418d-8b90-1c0a0a0eb70c" x="417" y="0" width="138" height="30">
+				<expression><![CDATA[$F{tp}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a61b9717-d030-4d93-b0a8-26b2d0aec48d"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="32" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="43" splitType="Stretch">
+		<element kind="staticText" uuid="bf35f92a-150f-419b-bb5d-593e4cc47e91" x="210" y="10" width="150" height="30" fontSize="18.0">
+			<text><![CDATA[Thank You]]></text>
+		</element>
+	</summary>
+</jasperReport>
